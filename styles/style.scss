@@ -16,7 +16,7 @@ header {
 }
 
 header,
-section {
+form {
   min-height: 20vh;
   display: flex;
   justify-content: center;
@@ -41,4 +41,42 @@ form button {
 form button:hover {
   background: #fda085;
   color: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+
+.todo {
+  background: white;
+  color: black;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    flex: 1;
+  }
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.complete-btn,
+.delete-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
 }

@@ -17,7 +17,7 @@ header {
 }
 
 header,
-section {
+form {
   min-height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,5 +49,57 @@ form button {
 form button:hover {
   background: #fda085;
   color: white;
+}
+
+.todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+
+.todo {
+  background: white;
+  color: black;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.complete-btn,
+.delete-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
