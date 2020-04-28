@@ -21,6 +21,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 form input,
@@ -62,6 +63,7 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s ease;
 
   li {
     flex: 1;
@@ -93,4 +95,35 @@ form button:hover {
 .completed {
   opacity: 0.5;
   text-decoration: line-through;
+}
+
+.deleting {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+select {
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  pointer-events: none;
 }
