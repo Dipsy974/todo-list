@@ -102,4 +102,18 @@ form button:hover {
   cursor: pointer;
   padding: 1rem;
 }
+
+.complete-btn {
+  background: #48dd3b;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
 /*# sourceMappingURL=style.css.map */
